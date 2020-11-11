@@ -3,6 +3,8 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
+    left: 0px;
+    top: 0px;
 }
 
 .content {
@@ -11,8 +13,14 @@ header {
     padding: 0 1.5rem;
 }
 
+#logo{
+    height: 3rem;
+}
+
 .logo {
     flex: 1;
+    font-size: 1.75rem;
+    height: 2rem;
 }
 
 .content ul {
@@ -34,7 +42,7 @@ header {
 @media only screen and (max-width: 760px)
  {
 
-    header .desktop, header .logo {
+    header .desktop, header .logo, #logo{
         display: none;
     }
 
