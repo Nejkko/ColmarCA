@@ -5,12 +5,14 @@ header {
     z-index: 100;
     left: 0px;
     top: 0px;
+    height: 4rem;
 }
 
 .content {
     display: flex;
     align-items: center;
     padding: 0 1.5rem;
+    height: 100%;
 }
 
 #logo{
@@ -49,4 +51,41 @@ header {
     header .mobile{
         display: block;
     }
+}
+
+/*MAIN CONTENT*/
+
+.maincontent {
+    position: relative;
+    top: 4.1rem;
+}
+
+/*Start here*/
+
+.starthere {
+    display: flex;
+    background-color: darkgray;
+    padding: 2rem 0;
+    align-items: center;
+}
+.startcontent {
+    width: 25rem;
+}
+
+.imgcontainer {
+    display: flex;
+    padding: 0rem 1.5rem;
+}
+
+.imgcontainer img {
+    width: 60%;
+}
+
+.startbutton {
+    background-color: black;
+    text-align: center;
+    border: 1px black solid;
+    padding: 0.5rem;
+    opacity: 0.5;
+    color: white;
 }
