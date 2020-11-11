@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 /* HEADER */
 header {
     position: fixed;
@@ -91,13 +94,14 @@ header {
 
 .secondcontent {
     display: flex;
+    padding: 2rem 1.5rem;
 }
 
 /*Large box*/
 
 .largerbox {
     max-width: 60%;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem 0 0;
 }
 .largecontent img {
     max-width: 100%;
@@ -109,6 +113,8 @@ header {
     display: flex;
     max-width: 40%;
     flex-direction: column;
+    bottom: 1rem;
+    position: relative;
 }
 .smallcontent {
     display: flex;
@@ -121,4 +127,31 @@ header {
 .textbox {
     max-width: 65%;
     margin: 1.5rem 3.5rem;
+}
+
+/*START LEARNING*/
+
+.learningcontent {
+    background-color: lightgray;
+    padding: 2rem 4.5rem;
+}
+
+.learningcontent h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.smallboxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smallbox {
+    background-color: white;
+    margin: 1rem;
+}
+
+.smallbox img {
+    height: auto;
 }
