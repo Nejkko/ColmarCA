@@ -4,3 +4,41 @@ header {
     width: 100%;
     z-index: 100;
 }
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    flex: 1;
+}
+
+.content ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.content ul li {
+    padding-left: 1rem;
+}
+
+.mobile {
+    display: none;
+}
+
+/*MOBILE NAVBAR*/
+
+@media only screen and (max-width: 760px)
+ {
+
+    header .desktop, header .logo {
+        display: none;
+    }
+
+    header .mobile{
+        display: block;
+    }
+}
