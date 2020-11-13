@@ -49,13 +49,20 @@ header {
 
 @media only screen and (max-width: 480px)
  {
-
+    .content{
+        padding: 0;
+    }
     header .desktop, header .logo, #logo{
         display: none;
     }
 
     header .mobile{
-        display: block;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    header .mobile img {
+        height: 2rem;
     }
 }
 
@@ -63,7 +70,7 @@ header {
 
 .maincontent {
     position: relative;
-    top: 4.1rem;
+    top: 3.5rem;
 }
 
 /*Start here*/
@@ -73,6 +80,7 @@ header {
     background-color: darkgray;
     padding: 2rem 0;
     align-items: center;
+    margin: 0;
 }
 .startcontent {
     width: 25rem;
@@ -92,34 +100,45 @@ header {
     color: white;
 }
 
-@media only screen and (max-width:760px){
+/*Mobile start here screen*/
+
+@media only screen and (max-width:480px){
     .startcontent, #startimg, .startbutton {
         display: none;
+    }
+
+    .starthere {
+        padding: 0;
     }
     .starthere .mobile {
         display: flex;
     }
     .mobilecontent {
-        width: 25rem;
+        padding-bottom: 2rem;
     }
     
     .mobilecontent img {
-        max-width: 100%;
-        padding: 0 1.5rem;
-        
+        max-width: 100%;      
+        padding: 0;      
     }
     
     .mobilebutton {
         background-color: black;
         text-align: center;
         border: 1px black solid;
-        padding: 0.5rem;
+        padding: 1rem;
         opacity: 0.5;
         color: white;
+        margin: 0 1rem;
     }
-    .starthere {
 
+    .mobilecontent h2 {
+        margin: 0 1rem 1.5rem;
     }
+    .mobilecontent h1 {
+        margin: 2rem 1rem;
+    }
+    
 }
 
 /*Second Content*/
@@ -162,6 +181,18 @@ header {
 .textbox {
     max-width: 65%;
     margin: 1.5rem 3.5rem;
+}
+.mobileboxes{
+    display: none;
+}
+/*Mobile*/
+
+@media only screen and (max-width:480px){
+    .largerbox, .smallerboxes {
+        display: none;}
+    .mobileboxes{
+        display: block;
+    }
 }
 
 /*START LEARNING*/
