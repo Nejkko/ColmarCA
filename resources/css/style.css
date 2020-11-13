@@ -96,14 +96,14 @@ header {
 
 .secondcontent {
     display: flex;
-    padding: 2rem 1.5rem;
 }
 
 /*Large box*/
 
 .largerbox {
     max-width: 60%;
-    padding: 0 1.5rem 0 0;
+    padding: 2rem 1.5rem;
+    border-right: 1px solid;
 }
 .largecontent img {
     max-width: 100%;
@@ -117,12 +117,15 @@ header {
     flex-direction: column;
     bottom: 1rem;
     position: relative;
+    padding: 2rem 0rem;
 }
 .smallcontent {
     display: flex;
-    padding: 1rem 1rem 0.5rem 0rem;
+    padding: 1rem 1rem 0.5rem;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
 }
-.smallcontent img {
+.boximg {
     max-width: 35%;
     height: auto;
 }
@@ -173,4 +176,28 @@ header {
 }
 .text h3 {
     margin: 0;
+}
+
+/*Thesis*/
+
+.thesis h1 {
+    text-align: center;
+    padding: 2rem 0;
+    margin:0;
+}
+.thesiscontent {
+    display: flex;
+    padding-bottom: 2rem;
+}
+video {
+    width: 100%;
+}
+.thesissmall {
+    display: flex;
+    padding: 1rem 1rem 0.5rem;
+}
+.thesisbox {
+    max-width: 60%;
+    padding: 2rem 1.5rem;
+
 }
