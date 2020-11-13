@@ -47,7 +47,7 @@ header {
 
 /*MOBILE NAVBAR*/
 
-@media only screen and (max-width: 760px)
+@media only screen and (max-width: 480px)
  {
 
     header .desktop, header .logo, #logo{
@@ -90,6 +90,36 @@ header {
     padding: 0.5rem;
     opacity: 0.5;
     color: white;
+}
+
+@media only screen and (max-width:760px){
+    .startcontent, #startimg, .startbutton {
+        display: none;
+    }
+    .starthere .mobile {
+        display: flex;
+    }
+    .mobilecontent {
+        width: 25rem;
+    }
+    
+    .mobilecontent img {
+        max-width: 100%;
+        padding: 0 1.5rem;
+        
+    }
+    
+    .mobilebutton {
+        background-color: black;
+        text-align: center;
+        border: 1px black solid;
+        padding: 0.5rem;
+        opacity: 0.5;
+        color: white;
+    }
+    .starthere {
+
+    }
 }
 
 /*Second Content*/
@@ -200,4 +230,13 @@ video {
     max-width: 60%;
     padding: 2rem 1.5rem;
 
+}
+
+/*Footer*/
+span.terms {
+    float: right;
+}
+footer {
+    padding: 1rem 1.5rem 3rem;
+    border-top: 1px solid;
 }
