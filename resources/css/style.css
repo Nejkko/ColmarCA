@@ -272,8 +272,45 @@ header {
 .text h3 {
     margin: 0;
 }
+.mobilelearning{
+    display: none;
+}
 
-/*Thesis*/
+/*Mobile*/
+@media only screen and (max-width:480px){
+    .learningcontent{
+        display: none;
+    }
+    .mobilelearning{
+        display: block;
+        padding: 2rem 0;
+        border-top: 1px solid darkgrey;
+        border-bottom: 1px solid darkgrey;
+    }
+    .mobilesmall{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobilesmallbox{
+        padding: 1rem 1rem 1.5rem;
+        background-color: darkgrey;
+        margin: 0.25rem;
+        font-size: 1.5rem;  
+        }
+    #startlearning{
+        text-align: center;
+        margin: 0;
+        padding-bottom: 0.75rem;
+    }
+    #learningtext{
+        margin: 0;
+        font-weight: 300;
+    }
+}
+
+
+
+/*THESIS*/
 
 .thesis h1 {
     text-align: center;
