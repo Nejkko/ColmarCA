@@ -333,7 +333,31 @@ video {
     padding: 2rem 1.5rem;
 
 }
+.mobilethesis{
+    display: none;
+}
 
+/*Mobile*/
+@media only screen and (max-width:480px){
+
+.thesis{
+    display:none;
+}
+
+.mobilethesis{
+    display: block;
+    padding: 2rem 0 1.5rem;
+}
+
+#thesisheading{
+    margin: 0 0 1rem;
+    text-align: center;
+}
+#thesisvideo{
+
+}
+
+}
 /*Footer*/
 span.terms {
     float: right;
@@ -341,4 +365,16 @@ span.terms {
 footer {
     padding: 1rem 1.5rem 3rem;
     border-top: 1px solid;
+}
+
+/*Mobile*/
+@media only screen and (max-width:480px){
+
+    .terms{
+        display: none;
+    }
+    footer{
+        padding: 1rem;
+        border: none;
+    }
 }
