@@ -111,7 +111,7 @@ a{
 .starthere {
     display: flex;
     background-color: rgb(226, 221, 221);
-    padding-left: 1.5rem;
+    padding: 1.5rem;
     align-items: center;
 }
 .startcontent {
@@ -142,9 +142,10 @@ a{
     text-align: center;
     border: 1px black solid;
     padding: 0.5rem 0;
-    opacity: 0.75;
+    opacity: 0.5;
     color: white;
     font-size: 1.5rem;
+    font-weight: 300;
 }
 
 /*Mobile start here screen*/
@@ -156,6 +157,7 @@ a{
 
     .starthere {
         padding: 0;
+        background-color: rgb(226, 221, 221)
     }
     .starthere .mobile {
         display: flex;
@@ -173,17 +175,22 @@ a{
         background-color: black;
         text-align: center;
         border: 1px black solid;
-        padding: 1rem;
-        opacity: 0.5;
+        padding: 0.5rem 0;
+        opacity: 0.4;
         color: white;
         margin: 0 1rem;
+        font-weight: 500;
+        font-size: 1.35rem;
     }
 
-    .startmobile h2 {
+    .startmobile h2 {    
         margin: 0 1rem 1.5rem;
+        color: rgb(59, 59, 59);
+        font-weight: 500;
     }
     .startmobile h1 {
         margin: 2rem 1rem;
+        color: rgb(59, 59, 59);
     }
     
 }
@@ -201,7 +208,7 @@ a{
 .largerbox {
     max-width: 60%;
     padding: 2rem 1.5rem;
-    border-right: 1px lightgrey solid;
+    border-right: 1px rgb(226, 221, 221) solid;
 }
 .largecontent img {
     max-width: 100%;
@@ -237,9 +244,13 @@ a{
 .smallcontent {
     display: flex;
     padding: 1rem 1rem 0.5rem;
-    border-bottom: 1px lightgrey solid;
-    border-top: 1px lightgrey solid;
+    border-bottom: 1px rgb(226, 221, 221) solid;
+    border-top: 1px rgb(226, 221, 221) solid;
     margin: 1px;
+}
+.smallcontent:hover{
+    background-color: rgb(226, 221, 221);
+    transition: background-color 0.5s;
 }
 .boximg {
     max-width: 35%;
@@ -261,10 +272,13 @@ a{
 /*Mobile*/
 
 @media only screen and (max-width:480px){
+
     .largerbox, .smallerboxes {
         display: none;}
+
     .mobileboxes{
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding-top: 1rem;
     }
     .mobilecontent {
@@ -300,6 +314,10 @@ a{
         padding-left: 1rem;
         padding-bottom: 2rem;
     }
+
+    .mobileboxes a {
+        color: blue;
+    }
 }
 
 /*START LEARNING*/
@@ -331,7 +349,10 @@ a{
     max-width: 26rem;
     line-height: 2rem;
 }
-
+.smallbox:hover{
+    background-color: white;
+    transition: background-color 1s;
+}
 .smallbox img {
     height: auto;
     width: 100%;
@@ -372,8 +393,8 @@ a{
     .mobilelearning{
         display: block;
         padding: 2rem 0;
-        border-top: 1px solid darkgrey;
-        border-bottom: 1px solid darkgrey;
+        border-top: 1px solid rgb(226, 221, 221);
+        border-bottom: 1px solid rgb(226, 221, 221);
     }
     .mobilesmall{
         display: flex;
@@ -381,18 +402,20 @@ a{
     }
     .mobilesmallbox{
         padding: 1rem 1rem 1.5rem;
-        background-color: darkgrey;
+        background-color: rgb(226, 221, 221);
         margin: 0.25rem;
         font-size: 1.5rem;  
+        color: rgb(59, 59, 59);
         }
     #startlearning{
         text-align: center;
         margin: 0;
         padding-bottom: 0.75rem;
+        color: rgb(59, 59, 59);
     }
     #learningtext{
         margin: 0;
-        font-weight: 300;
+        font-weight: 500;
     }
 }
 
@@ -434,6 +457,10 @@ video {
     display: flex;
     align-items: center;
 }
+.thesissmall:hover {
+    background-color: rgb(226, 221, 221);
+    transition: background-color 0.5s;
+}
 
 .thesisbox {
     max-width: 60%;
@@ -463,6 +490,7 @@ video {
 #thesisheading{
     margin: 0 0 1rem;
     text-align: center;
+    color: rgb(59, 59, 59);
 }
 
 }
@@ -472,7 +500,7 @@ span.terms {
 }
 footer {
     padding: 1rem 1.5rem 3rem;
-    border-top: 1px solid;
+    border-top: 1px rgb(226, 221, 221) solid;
     opacity: 0.8;
 }
 
