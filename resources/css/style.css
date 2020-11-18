@@ -3,6 +3,16 @@ html {
     margin: 0;
     padding: 0;
 }
+p {
+    opacity: 0.85;
+}
+h2 {
+    font-weight: 600;
+}
+
+body{
+    font-family: 'Poppins';
+}
 /* HEADER */
 header {
     position: fixed;
@@ -29,7 +39,24 @@ header {
     flex: 1;
     font-size: 1.75rem;
     height: 2rem;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
+
+span.academy {
+    opacity: 0.5;
+    font-weight: 400;
+}
+span.colmar {
+    opacity: 0.75;
+}
+
+nav.desktop {
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    color: black;
+}
+
 
 .content ul {
     list-style: none;
@@ -43,6 +70,11 @@ header {
 
 .mobile {
     display: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 /*MOBILE NAVBAR*/
@@ -71,33 +103,48 @@ header {
 .maincontent {
     position: relative;
     top: 3.5rem;
+    background-color: rgb(253, 251, 249);
 }
 
 /*Start here*/
 
 .starthere {
     display: flex;
-    background-color: darkgray;
-    padding: 2rem 0;
+    background-color: rgb(226, 221, 221);
+    padding-left: 1.5rem;
     align-items: center;
-    margin: 0;
 }
 .startcontent {
-    width: 25rem;
+    max-width: 40%;
+    font-family: 'Poppins';
+    margin-left: 1.5rem;
+}
+
+.startcontent h1 {
+    line-height: 3.5rem;
+    font-size: 3rem;
+    color: rgb(59, 59, 59);
+}
+
+.startcontent h2 {
+    line-height: 2.3rem;
+    color: rgb(59, 59, 59);
+    font-weight: 500;
 }
 
 .starthere img {
     max-width: 60%;
-    padding: 0 1.5rem;
+    padding: 2rem 0;
 }
 
 .startbutton {
     background-color: black;
     text-align: center;
     border: 1px black solid;
-    padding: 0.5rem;
-    opacity: 0.5;
+    padding: 0.5rem 0;
+    opacity: 0.75;
     color: white;
+    font-size: 1.5rem;
 }
 
 /*Mobile start here screen*/
@@ -145,6 +192,8 @@ header {
 
 .secondcontent {
     display: flex;
+    font-family: 'Poppins';
+    color: rgb(59, 59, 59);
 }
 
 /*Large box*/
@@ -152,10 +201,27 @@ header {
 .largerbox {
     max-width: 60%;
     padding: 2rem 1.5rem;
-    border-right: 1px solid;
+    border-right: 1px lightgrey solid;
 }
 .largecontent img {
     max-width: 100%;
+}
+
+.largecontent h1 {
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin: 2rem 0 1.5rem;
+}   
+
+.largecontent p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+#emanuel {
+    font-size: 1rem;
+    font-family: 'Roboto';
+    margin-top: 1.5rem;
 }
 
 /*Small boxes*/
@@ -171,17 +237,24 @@ header {
 .smallcontent {
     display: flex;
     padding: 1rem 1rem 0.5rem;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
+    border-bottom: 1px lightgrey solid;
+    border-top: 1px lightgrey solid;
+    margin: 1px;
 }
 .boximg {
     max-width: 35%;
     height: auto;
+    padding-right: 1rem;
 }
+
 .textbox {
     max-width: 65%;
-    margin: 1.5rem 3.5rem;
 }
+.textbox a {
+    color: blue;
+    opacity: 0.85;
+}
+
 .mobileboxes{
     display: none;
 }
@@ -232,7 +305,8 @@ header {
 /*START LEARNING*/
 
 .learningcontent {
-    background-color: lightgray;
+    color: rgb(59, 59, 59);
+    background-color: rgb(226, 221, 221);
     padding: 2rem 4.5rem;
 }
 
@@ -240,6 +314,8 @@ header {
     text-align: center;
     margin: 0;
     padding-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .smallboxes {
@@ -249,7 +325,7 @@ header {
 }
 
 .smallbox {
-    background-color: white;
+    background-color: rgb(253, 251, 249);
     margin: 1rem;
     font-size: 1.5rem;
     max-width: 26rem;
@@ -260,18 +336,30 @@ header {
     height: auto;
     width: 100%;
 }
+
 #courses {
     margin: 0.5rem 0;
+    opacity: 0.75;
+    font-weight: 300;
+    font-size: 1.4rem;
 }
+
 .text {
     padding: 1rem 1rem 1.5rem 1rem;
 }
+
 .text p {
     margin: 0;
+    opacity: 0.75;
+    font-weight: 300;
+    font-size: 1.2rem;
 }
+
 .text h3 {
     margin: 0;
+    font-weight: 500;
 }
+
 .mobilelearning{
     display: none;
 }
@@ -312,27 +400,50 @@ header {
 
 /*THESIS*/
 
+.thesis {
+    color: rgb(59, 59, 59);
+}
+
 .thesis h1 {
     text-align: center;
     padding: 2rem 0;
-    margin:0;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
+
+.largecontent h2 {
+    margin: 1.5rem 0 0.5rem;
+    font-weight: 600;
+}
+.largecontent p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.85;
+}
+
 .thesiscontent {
     display: flex;
-    padding-bottom: 2rem;
 }
+
 video {
     width: 100%;
 }
+
 .thesissmall {
     display: flex;
-    padding: 1rem 1rem 0.5rem;
+    align-items: center;
 }
+
 .thesisbox {
     max-width: 60%;
     padding: 2rem 1.5rem;
 
 }
+.thesissmall img {
+    padding: 1rem;
+}
+
 .mobilethesis{
     display: none;
 }
@@ -353,9 +464,6 @@ video {
     margin: 0 0 1rem;
     text-align: center;
 }
-#thesisvideo{
-
-}
 
 }
 /*Footer*/
@@ -365,6 +473,7 @@ span.terms {
 footer {
     padding: 1rem 1.5rem 3rem;
     border-top: 1px solid;
+    opacity: 0.8;
 }
 
 /*Mobile*/
@@ -376,5 +485,6 @@ footer {
     footer{
         padding: 1rem;
         border: none;
+        
     }
 }
